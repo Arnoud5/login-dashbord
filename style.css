@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "norsebold";
+  src: url(./assets/Norse-Bold.otf) format("opentype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(39, 39, 39);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.register-flex {
+  display: flex;
+  width: 100vw;
+}
+
+.left {
+  width: 35vw;
+  filter: drop-shadow(1px 0px 10px grey);
+}
+
+.right {
+  width: 65vw;
+}
+
+.left-bg {
+  background: url("./assets/left-bg.jpg");
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+.left-name {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  font-size: 40px;
+  color: white;
+  padding: 10px 0;
+}
+
+.left-name span {
+  font-family: "norsebold";
+  font-size: 60px;
+}
+
+.left-name img {
+  width: 70px;
+}
+.left-photo-author {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.form-contain {
+  width: 90%;
+  padding: 0 0 0 50px;
+}
+legend {
+  padding: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+}
+.right h2 {
+  max-width: 70%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  padding: 10px 0;
+}
+.form-flex-input {
+  display: flex;
+  flex-direction: column;
+}
+.form-box {
+  box-shadow: 5px 35px 100px 5px rgb(0, 0, 0, 0.1);
+  padding: 20px 0px;
+}
+button {
+  display: block;
+  margin: 30px 0px 30px 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(100, 146, 90);
+  color: white;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px 2px rgb(39, 39, 39, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+input:focus {
+  outline-color: rgb(106, 170, 196);
+  box-shadow: 3px 5px 10px rgb(226, 226, 226);
+}
+input:valid {
+  border-color:#e5e7eb;
+}
+input:invalid {
+  border: 2px solid rgb(158, 87, 87);
+}
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(100, 146, 90);
+}
