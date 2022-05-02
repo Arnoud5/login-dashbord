@@ -1,0 +1,259 @@
+body {
+  background-color: rgb(224, 224, 224);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(22, 22, 22);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 5fr;
+  grid-template-areas:
+    "nav header"
+    "nav main-content";
+}
+
+.navbar {
+  grid-area: nav;
+  background-color: rgb(92, 176, 209);
+}
+
+.inner-navbar{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+
+.logo i{
+  margin-right: 10px;
+}
+
+.user-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.user-menu span, a{
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.user-setting {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.user-setting span, a{
+  color: white;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.user-setting span i, .user-menu span i{
+  margin: 0 10px 0 0;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+}
+
+.header-width{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.header-top form {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+form button{
+  border: none;
+  background: transparent;
+}
+form i{
+  font-size: 20px;
+  margin-right: 4px;
+}
+form input{
+  border-radius: 50px;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  width: 50vw;
+  height: 28px;
+}
+
+.head-user-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.head-user-bottom .head-user-bg {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 0 20px;
+}
+.head-user-bg img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.head-user-bg .user-img-bottom{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.head-user-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.head-wellcome-user{
+  margin: 10px 0;
+}
+
+.head-wellcome-user p, h2{
+  margin: 10px;
+  padding: 0;
+}
+
+.header-bottom {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.head-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.head-buttons a {
+  margin: 0 10px;
+  list-style: none;
+  padding: 5px 20px;
+  background-color: rgb(67, 180, 233);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* main content */
+.main-content {
+  margin:20px;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-template-areas: "main-project main-side";
+}
+
+.project-container {
+  grid-area: main-project;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.project-card {
+  background-color: aliceblue;
+  border-left: 8px solid rgb(255, 179, 92);
+  border-radius: 10px;
+}
+
+.project {
+  padding: 20px;
+}
+
+.project-links{
+  display: flex;
+  justify-content: end;
+}
+
+.project-links a{
+  margin: 0 3px;
+  color: black;
+}
+
+.sidebar-content {
+  grid-area: main-side;
+}
+
+.announcement{
+  margin: 0 20px;
+}
+
+.announcement-container{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.announcement-container-inner{
+  padding: 20px;
+}
+
+.announcement-card{
+  border-bottom: 1px solid black;
+}
+
+.announcement-card:last-child{
+  border-bottom: none;
+}
+.trending{
+  margin: 0 20px;
+}
+
+.trending-container{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.trending-inner{
+  margin: 20px;
+}
+
+.trending-user-bg{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.trending-user-bg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.trending-card{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.trending-card p{
+  margin: 0;
+  padding: 2px 0;
+}
